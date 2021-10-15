@@ -11,11 +11,11 @@ import Seo from '@components/Seo'
  * Create the component Home
  * @return {Object} Return the dom of the Home page
  */
-const Home = (): JSX.Element => (
+const Experience = (): JSX.Element => (
   <>
     <Seo title="Home" description="Description of Home" />
     Test
   </>
 )
 
-export default Home
+export default Experience

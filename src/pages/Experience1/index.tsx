@@ -11,7 +11,6 @@ import React, { useEffect } from 'react'
  * @return {Object} Return the dom of the Home page
  */
 const Experience = (): JSX.Element => {
-
   // Managing the onClick event
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     console.log(e.target)
@@ -30,7 +29,7 @@ const Experience = (): JSX.Element => {
     e.preventDefault()
   }
 
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLElement>) => {
+  const handleKeyDown = (e: KeyboardEvent) => {
     console.log(e.key)
   }
 

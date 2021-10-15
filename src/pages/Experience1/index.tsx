@@ -33,8 +33,13 @@ const Experience = (): JSX.Element => {
     console.log(e.key)
   }
 
+  const handleScrollDown = (e: WheelEvent) => {
+    console.log(e.deltaY)
+  }
+
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown)
+    document.addEventListener('wheel', handleScrollDown)
 
     return () => {
       document.removeEventListener('keydown', handleKeyDown)

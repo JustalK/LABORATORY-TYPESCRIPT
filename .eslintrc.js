@@ -48,6 +48,8 @@ module.exports = {
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] }
     ],
     'no-underscore-dangle': 0,
-    '@typescript-eslint/naming-convention': 0
+    '@typescript-eslint/naming-convention': 0,
+    '@typescript-eslint/ban-ts-comment': 0,
+    'no-console': '0'
   }
 }

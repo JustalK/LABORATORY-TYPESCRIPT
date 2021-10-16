@@ -20,12 +20,24 @@ const Experience = (): JSX.Element => {
     e.preventDefault()
   }
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+  }
+
   // Managing the change event of the React
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e.target)
   }
 
   const handleInput = (e: React.SyntheticEvent) => {
+    e.preventDefault()
+  }
+
+  const handleBlur = (e: React.SyntheticEvent) => {
+    e.preventDefault()
+  }
+
+  const handleFocus = (e: React.SyntheticEvent) => {
     e.preventDefault()
   }
 
@@ -37,12 +49,19 @@ const Experience = (): JSX.Element => {
     console.log(e.deltaY)
   }
 
+  const handleClickEvent = (e: MouseEvent) => {
+    e.preventDefault()
+  }
+
   useEffect(() => {
+    document.addEventListener('click', handleClickEvent)
     document.addEventListener('keydown', handleKeyDown)
     document.addEventListener('wheel', handleScrollDown)
 
     return () => {
       document.removeEventListener('keydown', handleKeyDown)
+      document.removeEventListener('wheel', handleScrollDown)
+      document.removeEventListener('click', handleClickEvent)
     }
   }, [])
 
@@ -54,7 +73,14 @@ const Experience = (): JSX.Element => {
       <a href="#foo" onClick={handleClickAnchor}>
         Test Click on Anchor
       </a>
-      <input onChange={handleChange} onInput={handleInput} />
+      <form onSubmit={handleSubmit}>
+        <input
+          onChange={handleChange}
+          onInput={handleInput}
+          onBlur={handleBlur}
+          onFocus={handleFocus}
+        />
+      </form>
     </div>
   )
 }

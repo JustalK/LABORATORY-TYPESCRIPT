@@ -18,6 +18,7 @@ The maintainability of the project is checked by `codeclimate`.
 I explain with all the details how I build the project and my way of working.
 
 - [Links](#links)
+- [Experiences](#experiences)
 - [Documentation](#documentation)
 - [Organization](#organization)
 - [Development](#development)
@@ -27,6 +28,11 @@ I explain with all the details how I build the project and my way of working.
 ## Links
 
 1. [React Typescript For Experienced React Developer](https://react-typescript-cheatsheet.netlify.app/)
+
+## Experiences
+
+0. **Experience 0**: Default template
+1. **Experience 1**: Handling the type of all the differents events
 
 ## Documentation
 #### Code documentation

@@ -1,17 +1,13 @@
-# REACT TYPESCRIPT APP TEMPLATE
+# LABORATORY TYPESCRIPT
 
 [![Maintainability Status](https://api.codeclimate.com/v1/badges/f6f7ed79501f794ce74d/maintainability)](https://codeclimate.com/github/JustalK/REACT-APP/maintainability)
 ![David](https://img.shields.io/david/justalk/REACT-APP)
 
 ## Goal
 
-This project is a template for building react-app with all my favorite tools already configured.
+This project is a laboratory for `TypeScript` and also a place for me to remember some way of writing edge cases.
 
-Obviously, the app is using the latest version of `react`. For avoiding the relative path, I modified the webpack and allowing the import with an alias. I also added the support for sass files.
-
-In addition, I added `prettier` and configured it for working well with `esLint`. Finally, I added the basic usefull package such as the router and the helmet.
-
-The maintainability of the project is checked by `codeclimate`.
+The app is using `React` associated with `TypeScript`. So most of the TS in the app is only focus on React notation.
 
 ## Plan of the presentation
 
@@ -68,8 +64,9 @@ npm run build:docs
 ## Development
 #### Packages
 
-- **react-app-rewired**: Allow us to rewrite the config of React without ejecting the app
+- **@craco/craco**:Allow us to rewrite the config of React without ejecting the app
 - **customize-cra**: Allow us to rewrite the config of webpack and create module alias
+- **craco-alias**: For managing the alias-module with typescript
 - **eslint**: For linting the code with EsLint
 - **@babel/eslint-parser**: Changing the parser for having access to eslint in babel
 - **eslint-config-airbnb**: For having the set of rules airbnb for eslint
@@ -81,6 +78,8 @@ npm run build:docs
 - **jsdoc**: For managing the dev documentation of the project
 - **react-router-dom**: For managing the router and the path to the differents pages
 - **react-helmet**: For managing the meta of the differents page
+- **@types/xxx**: For managing the types for typescript
+- **typescript**: For adding the handling of the type in JS
 
 ## Running
 

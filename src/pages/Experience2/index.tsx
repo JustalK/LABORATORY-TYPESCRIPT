@@ -15,7 +15,9 @@ type ExperienceProps = {
  * Create the component Home
  * @return {Object} Return the dom of the Home page
  */
-const Experience = ({ name, count }: ExperienceProps): JSX.Element => <>Test</>
+const Experience = ({ name, count }: ExperienceProps): JSX.Element => (
+  <div data-count={count}>{name}</div>
+)
 
 Experience.defaultProps = {
   count: 0

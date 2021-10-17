@@ -33,6 +33,8 @@ I explain with all the details how I build the project and my way of working.
 
 0. **Experience 0**: Default template
 1. **Experience 1**: Handling the type of all the differents events
+2. **Experience 2**: Handling the props type and default props type
+3. **Experience 3**: Handling the passing of function to children (useRef, useState...)
 
 ## Documentation
 #### Code documentation

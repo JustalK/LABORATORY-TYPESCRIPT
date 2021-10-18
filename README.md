@@ -31,6 +31,7 @@ I explain with all the details how I build the project and my way of working.
 1. **Experience 1**: Handling the type of all the differents events
 2. **Experience 2**: Handling the props type and default props type
 3. **Experience 3**: Handling the passing of function to children (useRef, useState...)
+4. **Experience 4**: Handling the custom hook
 
 ## Documentation
 #### Code documentation

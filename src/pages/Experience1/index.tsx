@@ -31,10 +31,14 @@ const Experience = (): JSX.Element => {
 
   const handleInput = (e: React.SyntheticEvent) => {
     e.preventDefault()
+    const { target } = e
+    console.log(target)
   }
 
   const handleBlur = (e: React.SyntheticEvent) => {
     e.preventDefault()
+    const { target } = e
+    console.log(target)
   }
 
   const handleFocus = (e: React.SyntheticEvent) => {
